@@ -1,0 +1,28 @@
+[
+  {
+    "nome": "Lasanha",
+    "caracteristicas": [
+      "massa"
+    ]
+  },
+  {
+    "nome": "Sushi",
+    "caracteristicas": [
+      "peixe cru"
+    ]
+  },
+  {
+    "nome": "Hamb\u00farguer",
+    "caracteristicas": [
+      "carne"
+    ]
+  },
+  {
+    "nome": "Pizza",
+    "caracteristicas": [
+      "massa",
+      "queijo",
+      "molho"
+    ]
+  }
+]
