@@ -10,4 +10,4 @@ e uma das formas é ir na raiz do projeto rode o comando:
 ``php -S localhost:8000``
 
 ###### obs
-Algumas coisas estavam dando erro dentro do aplicativo enviado como quando caia na situação onde eu tinha de digitar o prato e tentava cancelar ele substituia o prato por "null" para evitar isso nessa etapa para caso ele cancele eu envio para o inicio
+Algumas coisas estavam dando erro dentro do aplicativo(baixado pelo dropbox) como quando caia na situação onde eu tinha de digitar o prato e tentava cancelar ele substituia o prato por "null" para evitar isso nessa etapa para caso ele cancele eu envio para o inicio
