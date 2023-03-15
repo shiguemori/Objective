@@ -16,13 +16,5 @@
     "caracteristicas": [
       "carne"
     ]
-  },
-  {
-    "nome": "Pizza",
-    "caracteristicas": [
-      "massa",
-      "queijo",
-      "molho"
-    ]
   }
 ]

@@ -74,7 +74,9 @@ $caracteristicaAleatoria = $aleatorio->getCaracteristicaAleatoria();
         </div>
 
         <div class="step" id="step-6">
-            <h2>Qual característica <label class="novo-prato"></label> tem que o <label id="prato-similar" class="nome"></label> não tem?</h2>
+            <h2>Qual característica <label class="novo-prato"></label> tem que o(a) <label id="prato-similar" class="nome">
+                    <?= $aleatorio->getNome() ?>
+                </label> não tem?</h2>
             <input class="form-control" type="text" id="nova-caracteristica"><br>
             <div class="d-flex justify-content-center">
                 <button class="btn btn-primary" id="sim-6">Ok</button>

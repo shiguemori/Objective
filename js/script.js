@@ -24,17 +24,17 @@ $(document).ready(function () {
                     $('#step-2').hide();
                     $('#step-5').show();
                     $("#categoria").val(null)
-                    return
+                }else{
+                    $(".caracteristica").each(function () {
+                        $(this).text(response.caracteristica)
+                    })
+                    $(".nome").each(function () {
+                        $(this).text(response.selecionado.nome)
+                    });
+                    $("#nome").val(response.selecionado.nome)
+                    $("#lista").val(JSON.stringify(response.pratos));
+                    $("#categoria").val(response.caracteristica);
                 }
-                $(".caracteristica").each(function () {
-                    $(this).text(response.caracteristica)
-                })
-                $(".nome").each(function () {
-                    $(this).text(response.selecionado.nome)
-                });
-                $("#nome").val(response.selecionado.nome)
-                $("#lista").val(JSON.stringify(response.pratos));
-                $("#categoria").val(response.caracteristica);
             }, error: function (xhr, status, error) {
                 alert("Erro ao carregar prato, contrate o desenvolvedor para ele corrigir")
             }
@@ -58,13 +58,14 @@ $(document).ready(function () {
                 if (response.selecionado == null) {
                     $('#step-3').hide();
                     $('#step-5').show();
-                    return
+                } else {
+                    $(".nome").each(function () {
+                        $(this).text(response.selecionado.nome)
+                    })
+                    $("#nome").val(response.selecionado.nome)
+                    $("#lista").val(JSON.stringify(response.pratos));
                 }
-                $(".nome").each(function () {
-                    $(this).text(response.selecionado.nome)
-                })
-                $("#nome").val(response.selecionado.nome)
-                $("#lista").val(JSON.stringify(response.pratos));
+
             }, error: function (xhr, status, error) {
                 alert("Erro ao carregar prato, contrate o desenvolvedor para ele corrigir")
             }
